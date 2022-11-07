@@ -451,11 +451,11 @@ contract AVAXGods is ERC1155, Ownable, ERC1155Supply {
     uint p2 = playerInfo[_battle.players[1]];
 
     players[p1].inBattle = false;
-    players[p1].playerHealth = 25;
+    players[p1].playerHealth = 5;
     players[p1].playerMana = 10;
 
     players[p2].inBattle = false;
-    players[p2].playerHealth = 25;
+    players[p2].playerHealth = 5;
     players[p2].playerMana = 10;
 
     address _battleLoser = battleEnder == _battle.players[0] ? _battle.players[1] : _battle.players[0];
